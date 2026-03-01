@@ -1,4 +1,5 @@
 📌 Delhi PM2.5 Pollution Forecasting Using SARIMA
+
 📖 Project Overview
 
 This project builds a time-series forecasting model to predict future PM2.5 pollution levels in Delhi using historical air quality data. The objective is to analyze seasonal pollution patterns and develop a statistically robust forecasting model.
@@ -14,6 +15,7 @@ Variables include: PM2.5, PM10, NO2, SO2, CO, Ozone, AQI
 Data aggregated to monthly frequency for stable seasonal modeling
 
 🛠️ Methodology
+
 1️⃣ Data Preprocessing
 
 Created datetime index from Year, Month, Date columns
@@ -21,6 +23,7 @@ Created datetime index from Year, Month, Date columns
 Sorted and validated time continuity
 
 Aggregated daily PM2.5 into monthly averages
+
 
 2️⃣ Exploratory Time Series Analysis
 
@@ -30,11 +33,13 @@ Augmented Dickey-Fuller (ADF) Test for stationarity
 
 Rolling mean visualization
 
+
 3️⃣ Baseline Models
 
 Naive forecast (last value persistence)
 
 Seasonal naive forecast (same month previous year)
+
 
 4️⃣ Model Development
 
@@ -45,6 +50,7 @@ Seasonal ARIMA (SARIMA)
 Final selected model:
 
 SARIMA(1,0,0)(0,1,0,12)
+
 5️⃣ Model Evaluation
 
 Mean Absolute Error (MAE)
